@@ -258,6 +258,7 @@ You can customize `Config` only once, preferably during application initializati
 Config.setup do |config|
   config.const_name = 'Settings'
   config.knockout_prefix = nil
+  config.overwrite_arrays = false
 end
 ```
 
@@ -270,6 +271,8 @@ Following options are available:
 Inheritance customization (check [Deep Merge](https://github.com/danielsdeleo/deep_merge) for more details):
 
 * `knockout_prefix` - ability to remove elements of the array set in earlier loaded settings file. Default: `nil`
+
+* `overwrite_arrays` - ability to replace an entire array set in earlier loaded settings file. Default: `false`
 
 ## Working with Heroku
 
